@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('prepratiom') {
             steps {
-                git "https://github.com/emansoliman/jenkins_nodejs_example.git
+                git "https://github.com/emansoliman/jenkins_nodejs_example.git"
         }
          stage('CI') {
             steps {
