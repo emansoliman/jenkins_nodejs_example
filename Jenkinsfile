@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -12,7 +13,7 @@ pipeline {
                    {
                      sh """
                     docker build . -t emansoliman/myimage:1.0
-                    docker login --username $(myname) --password $(mypass)
+                    docker login --username $[myname] --password $[mypass]
                     docker push emansoliman/myimage:1.0
                     """
                    }
